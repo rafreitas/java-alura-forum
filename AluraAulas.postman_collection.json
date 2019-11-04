@@ -1,0 +1,234 @@
+{
+	"info": {
+		"_postman_id": "f3aeb67e-8916-4f4f-a3fc-c8b02273e2fb",
+		"name": "AluraAulas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/topicos",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"titulo\" : \"Dúvida Postman\",\n\t\"mensagem\" : \"Texto da mensagem\",\n\t\"nomeCurso\" : \"Spring Boot\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/topicos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topicos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/topicos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"titulo\" : \"Dúvida Postman\",\n\t\"mensagem\" : \"Texto da mensagem\",\n\t\"nomeCurso\" : \"Spring Boot\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/topicos?page=0&size=10&sort=id,asc&sort=dataCriacao,desc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topicos"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "size",
+							"value": "10"
+						},
+						{
+							"key": "sort",
+							"value": "id,asc"
+						},
+						{
+							"key": "sort",
+							"value": "dataCriacao,desc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/topicos",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"titulo\" : \"Atualizado\",\n\t\"mensagem\" : \"Mensagem 2\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/topicos/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topicos",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/topicos",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"titulo\" : \"Dúvida Postman\",\n\t\"mensagem\" : \"Texto da mensagem\",\n\t\"nomeCurso\" : \"Spring Boot\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/topicos/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topicos",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/actuator",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"titulo\" : \"Dúvida Postman\",\n\t\"mensagem\" : \"Texto da mensagem\",\n\t\"nomeCurso\" : \"Spring Boot\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/actuator/?",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"actuator",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0",
+							"disabled": true
+						},
+						{
+							"key": "size",
+							"value": "10",
+							"disabled": true
+						},
+						{
+							"key": "sort",
+							"value": "id,asc",
+							"disabled": true
+						},
+						{
+							"key": "sort",
+							"value": "dataCriacao,desc",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
